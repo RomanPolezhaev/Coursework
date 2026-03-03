@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Добавление трека - Playlistmaker</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles/mainstyle.css">
+  <link rel="icon" href="./assets/images/site-icon.png" />
+  <script type="module" src="./js/form.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h2 class="logo">Playlistmaker</h2>
+      <nav class="main-nav">
+        <a href="./index.html">Главная</a>
+        <a href="./form.html">Добавить трек</a>
+        <a href="./aboutus.html">О нас</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <h1>Добавить новый трек</h1>
+    <form id="trackForm">
+      <div class="form-group">
+        <label for="trackName">Название трека *</label>
+        <input type="text" id="trackName" name="trackName" required placeholder="Введите название трека">
+      </div>
+      <div class="form-group">
+        <label for="trackUrl">Ссылка на трек *</label>
+        <input type="url" id="trackUrl" name="trackUrl" required placeholder="https://...">
+      </div>
+      <div class="form-group">
+        <label for="trackCover">Ссылка на обложку (необязательно)</label>
+        <input type="url" id="trackCover" name="trackCover" placeholder="https://...">
+      </div>
+      <div class="form-buttons">
+        <button type="submit" id="submitBtn">
+          Отправить
+        </button>
+        <button type="reset" id="resetBtn">
+          Очистить форму
+        </button>
+      </div>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+    <a class="playlist-link" href="./index.html">Просмотреть плейлист</a>
+  </main>
+</body>
+
+</html>
