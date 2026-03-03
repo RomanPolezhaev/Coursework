@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: #1e1e1e;
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.header-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+.nav a:visited {
+  text-decoration: none;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+main.container {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+form,
+.playlist {
+  background-color: #ffffff;
+  color: #222;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.playlist-link{
+    display: flex;
+    justify-content: center;
+}
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #222;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+}
+
+button[type="reset"] {
+  background-color: #ddd;
+}
+
+button[type="reset"]:hover {
+  background-color: #ccc;
+}
+
+.playlist ul {
+  list-style: none;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.track-item:last-child {
+  border-bottom: none;
+}
+
+.track-cover {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.track-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.track-info a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.track-info a:hover {
+  text-decoration: underline;
+}
+
+.add-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.add-link:hover {
+  text-decoration: underline;
+}
+.delete-btn {
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.delete-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  transform: scale(1.1);
+}
