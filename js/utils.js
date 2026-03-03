@@ -9,9 +9,10 @@ export function createTrackElement(track) {
       <a href="${track.url}" target="_blank">Открыть трек</a>
     </div>
     <button class="delete-btn">
-        <img src="/assets/images/delete-button.png" alt="Удалить"></img>
+        <img src="../assets/images/delete-button.png" alt="Удалить"></img>
     </button>
   `;
     li.dataset.id = track.id
   return li;
+
 }
