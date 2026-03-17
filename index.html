@@ -1,33 +1,38 @@
 <!doctype html>
 <html lang="ru">
+  <head>
+    <title>Playlistmaker - Главная</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Интерактивный музыкальный плейлист на JavaScript. Пользователь может добавлять, удалять и прослушивать треки прямо на сайте.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link rel="icon" href="./assets/images/site-icon.png" />
+    <script type="module" src="./js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <title>Playlistmaker</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./styles/mainstyle.css" />
-  <link rel="icon" href="./assets/images/site-icon.png" />
-  <script type="module" src="./js/main.js" defer></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-container">
-      <h2 class="logo">Playlistmaker</h2>
-      <nav class="main-nav">
-        <a href="./index.html">Главная</a>
-        <a href="./form.html">Добавить трек</a>
-        <a href="./aboutus.html">О нас</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <h1>Мой плейлист</h1>
-    <a href="./form.html" class="add-link">+ Добавить трек</a>
-    <section class="playlist">
-      <ul id="playlist"></ul>
-    </section>
-  </main>
-</body>
-
-
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h2 class="logo">Playlistmaker</h2>
+        <nav class="main-nav">
+          <a href="./index.html">Главная</a>
+          <a href="./form.html">Добавить трек</a>
+          <a href="./aboutus.html">О нас</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Мой плейлист</h1>
+      <a href="./form.html" class="add-link">+ Добавить трек</a>
+      <section class="playlist">
+        <ul id="playlist"></ul>
+      </section>
+    </main>
+  </body>
 </html>
