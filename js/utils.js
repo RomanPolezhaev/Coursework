@@ -36,7 +36,7 @@ export function createTrackElement(track) {
     </div>
 
     <button class="delete-btn">
-      <img src="../assets/images/delete-button.png" alt="Удалить">
+      <img src="assets/images/delete-button.png" alt="Удалить">
     </button>
   `;
 
