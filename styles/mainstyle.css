@@ -174,10 +174,11 @@ button[type="reset"]:hover {
 }
 
 .track-cover {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
 .track-info h3 {
